@@ -8289,23 +8289,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7218713972142075397, guid: d34700a5f6d359546bc65c95236d3535, type: 3}
   m_PrefabInstance: {fileID: 721242498}
   m_PrefabAsset: {fileID: 0}
---- !u!111 &685402089
-Animation:
+--- !u!95 &685402087
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587753468}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Animation: {fileID: 4801664423430400596, guid: 74e9ef56515f256419030addd8453de1, type: 3}
-  m_Animations:
-  - {fileID: 4801664423430400596, guid: 74e9ef56515f256419030addd8453de1, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
   m_UpdateMode: 0
-  m_CullingType: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &688146524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9078,14 +9083,13 @@ PrefabInstance:
       value: npc_csl_00_character_01f_02
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 4437307846477209959, guid: d34700a5f6d359546bc65c95236d3535, type: 3}
     - {fileID: 7621214330368130390, guid: d34700a5f6d359546bc65c95236d3535, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8027057966121039039, guid: d34700a5f6d359546bc65c95236d3535, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 685402089}
+      addedObject: {fileID: 685402087}
   m_SourcePrefab: {fileID: 100100000, guid: d34700a5f6d359546bc65c95236d3535, type: 3}
 --- !u!1001 &726685778
 PrefabInstance:
@@ -21562,7 +21566,7 @@ Animation:
   m_GameObject: {fileID: 1845279412}
   m_Enabled: 1
   serializedVersion: 4
-  m_Animation: {fileID: 4801664423430400596, guid: 74e9ef56515f256419030addd8453de1, type: 3}
+  m_Animation: {fileID: 7400000, guid: 765e2fde8c84f094e99304c6198491ea, type: 3}
   m_Animations:
   - {fileID: 4801664423430400596, guid: 74e9ef56515f256419030addd8453de1, type: 3}
   m_WrapMode: 0
