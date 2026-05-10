@@ -7,7 +7,7 @@ public class ClueManager : MonoBehaviour
     private GOInteraction myGOI;
 
     public static int cluesFound = 0;
-    public static int totalClues = 4;
+    public static int totalClues = 7;
     public GameObject finalQuestionUI;
 
     void Start()
@@ -58,14 +58,11 @@ public class ClueManager : MonoBehaviour
         cluesFound++;
         Debug.Log("Clues found: " + cluesFound);
 
+        UIManager.Instance.UpdateClueCounter();
+
         if (cluesFound >= totalClues)
         {
-            if (finalQuestionUI != null)
-            {
-                finalQuestionUI.SetActive(true);
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
+            UIManager.Instance.ShowFinalUI();
         }
     }
 }
